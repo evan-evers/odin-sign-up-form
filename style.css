@@ -1,0 +1,93 @@
+@font-face {
+    font-family: Arvo-Bold;
+    src: url(./fonts/Arvo-Bold.woff);
+}
+
+@font-face {
+    font-family: OpenSans-Medium;
+    src: url(./fonts/OpenSans-Medium.woff);
+}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(./fonts/OpenSans-Bold.woff);
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+p {
+    font-family: OpenSans-Medium, sans-serif;
+}
+
+.logo-area {
+    flex: 1 1 40vw;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-area {
+    flex: 1 1 60vw;
+    margin: 0px;
+    border: 0px;
+    padding-left: 50px;
+    padding-top: 25vh;
+}
+
+img {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+img.background {
+    width: 100%;
+    height: 100vh;
+}
+
+img.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+}
+
+h1 {
+    font-family: Arvo-Bold, sans-serif;
+    color: black;
+    font-size: 50px;
+}
+
+.logo-banner {
+    position: absolute;
+    top: 30%;
+    background-color: #FFFFFF60;
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.credit-container {
+    position: absolute;
+    top: 93%;
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-credit {
+    color: white;
+}
