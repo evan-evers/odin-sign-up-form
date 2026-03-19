@@ -13,14 +13,19 @@
     src: url(./fonts/OpenSans-Bold.woff);
 }
 
-
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
 
 body {
     display: flex;
     flex-direction: row;
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
+    height: 100vh;
+    height: 100dvh;
+    width: 100vw;
+    width: 100dvw;
 }
 
 p {
@@ -28,7 +33,7 @@ p {
 }
 
 .logo-area {
-    flex: 1 1 40vw;
+    flex: 1 0 40vw;
     margin: 0px;
     border: 0px;
     padding: 0px;
@@ -40,8 +45,8 @@ p {
     flex: 1 1 60vw;
     margin: 0px;
     border: 0px;
-    padding-left: 50px;
-    padding-top: 25vh;
+    padding-top: 15vh;
+    background-color: #F7F7F7;
 }
 
 img {
@@ -70,17 +75,19 @@ h1 {
 .logo-banner {
     position: absolute;
     top: 30%;
-    background-color: #FFFFFF60;
+    background-color: #FFFFFF50;
     width: 40vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .credit-container {
     position: absolute;
-    top: 93%;
+    top: 95%;
     width: 40vw;
     display: flex;
     flex-direction: row;
@@ -90,4 +97,90 @@ h1 {
 
 .image-credit {
     color: white;
+    font-size: 12px;
+}
+
+label {
+    font-family: OpenSans-Medium, sans-serif;
+    font-size: 14px;
+}
+
+input {
+    font-family: OpenSans-Medium, sans-serif;
+    width: 260px;
+    height: 25px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    border: 1px solid #BBB;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+
+input:invalid {
+    outline: none;
+    border: 2px solid #ff5b5b;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #3f70b4;
+    box-shadow: 3px 3px 5px #DDD;
+}
+
+h2 {
+    font-family: OpenSans-Medium, sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-right: 250px;
+}
+
+button {
+    font-family: OpenSans-Bold, sans-serif;
+    font-size: 20px;
+    color: #FFF;
+    background-color: #3f70b4;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #DDD;
+}
+
+.input-row {
+    display: flex;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header,
+.form-container,
+.form-submit {
+    padding-left: 50px;
+}
+
+.form-container{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    box-shadow: 0px 10px 5px -5px #DDD;
+    background-color: #FFF;
+    width: 100vh;
+}
+
+.login-prompt {
+    margin-top: 25px;
+}
+
+.login-prompt > a {
+    text-decoration: none;
+    color: #3f70b4;
 }

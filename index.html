@@ -18,31 +18,54 @@
         </div>
     </div>
     <div class="form-area">
-        <h2>This form is faaaaake bro, this form is not real, they can't pay me to tell you it's real.</h2>
-        <h2>Kill yourself.</h2>
-        <br>
-        <h2>Fill me pleeeeease dude</h2>
-        <form action="" method="post">
-            <div class="form-container">
-                <label for="first-name">First Name:</label>
-                <input type="text" id="first-name">
-                <label for="last-name">Last Name:</label>
-                <input type="text" id="last-name">
-                <label for="email">Email:</label>
-                <input type="email" id="email">
-                <label for="phone-number">Phone Number:</label>
-                <input type="text" id="phone-number" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$">
-                <label for="password">Password:</label>
-                <input type="password" id="password">
-                <label for="password-confirm">Confirm Password:</label>
-                <input type="password" id="password-confirm">
+        <div class="form-header">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+            <h2>Ut enim ad minim veniam.</h2>
+            <br>
+            <br>
+        </div>
+        <div class="form-container">
+            <h2>Let's get started!</h2>
+            <form action="" method="post">
+                <div class="input-row">
+                    <div class="input-container">
+                        <label for="first-name">FIRST NAME:</label>
+                        <input type="text" id="first-name">
+                    </div>
+                    <div class="input-container">
+                        <label for="last-name">LAST NAME:</label>
+                        <input type="text" id="last-name">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-container">
+                        <label for="email">EMAIL:</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="input-container">
+                        <label for="phone-number">PHONE NUMBER:</label>
+                        <input type="text" id="phone-number" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-container">
+                        <label for="password">PASSWORD: *</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="password-confirm">CONFIRM PASSWORD: *</label>
+                        <input type="password" id="password-confirm" required>
+                    </div>
+                </div>
             </div>
+        <div class="form-submit">
             <button type="submit">Create Account</button>
-        </form>
-        <p class="login-prompt">
-            Already have an account?
-            <a target="_blank" href="https://en.wikipedia.org/wiki/Cake">Log in</a>
-        </p>
+            </form>
+            <p class="login-prompt">
+                Already have an account?
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Cake">Log in</a>
+            </p>
+        </div>
     </div>
 </body>
 </html>
